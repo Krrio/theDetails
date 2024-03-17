@@ -54,16 +54,16 @@ const HowItWorks = () => {
                 className="bg-transparent relative z-10"
               />
             </div>
-            <div className="hiw-video xl:ml-[1000px]">
-              <video className="pointer-events-none" playsInline preload="none" muted autoPlay ref={videoRef}>
-                <source src={frameVideo} type="video/mp4" />
-              </video>
-            </div>
-            </div>
+            <div className="hiw-video">
+                <video className="pointer-events-none" playsInline preload="none" muted autoPlay ref={videoRef}>
+                  <source src={frameVideo} type="video/mp4" />
+                </video>
+              </div>
+          </div>
           <p className="text-gray font-semibold text-center mt-3">Honkai: Star Rail</p>
           </div>
 
-          <div className="hiw-text-container md:relative md:text-center md:items-center md:flex-col">
+          <div className="hiw-text-container">
                 <div className="flex flex-1 justify-center flex-col">
                   <p className="hiw-text g_fadeIn">
                     A17 Pro is an entirely new class of iPhone chip that delivers our {' '}
@@ -73,7 +73,7 @@ const HowItWorks = () => {
                   </p>
 
                   <p className="hiw-text g_fadeIn">
-                    Mobile {' '}
+                      Mobile {' '}
                     <span className="text-white">
                       games will look and feel so immersive
                     </span>,
